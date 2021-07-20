@@ -19,9 +19,8 @@ void main() {
 
   //using default values in functions
   //A boolean fuction
-  bool withinTolerance({required int value, int min = 0, int max = 100}) {
-    return min <= value && value <= max;
-  }
+  bool withinTolerance(int value, [int min = 0, int max = 100]) =>
+     min <= value && value <= max;
 
   //The if statement is evaluated when the withinTolerance() function evaluates true.
   if (withinTolerance(101)) {
@@ -30,10 +29,9 @@ void main() {
     print('This Number is not within the range of 1-100');
   }
   //using named parameters
-  //making parameters required
-  int areaOfRectangle({required int width, required int height}) {
-    return (width * height);
-  }
+  int areaOfRectangle({required int width, required int height}) =>
+    (width * height);
+  
 
   print(areaOfRectangle(width: 10, height: 12));
 }
