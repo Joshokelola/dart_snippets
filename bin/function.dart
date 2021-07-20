@@ -19,7 +19,7 @@ void main() {
 
   //using default values in functions
   //A boolean fuction
-  bool withinTolerance(int value, [int min = 0, int max = 100]) {
+  bool withinTolerance({required int value, int min = 0, int max = 100}) {
     return min <= value && value <= max;
   }
 
@@ -30,6 +30,7 @@ void main() {
     print('This Number is not within the range of 1-100');
   }
   //using named parameters
+  //making parameters required
   int areaOfRectangle({required int width, required int height}) {
     return (width * height);
   }
