@@ -29,10 +29,12 @@ void main() {
 class password {
   String value = '';
 
+  //method that returns true if $value's length is greater than 8
   bool isValid() {
     return value.length > 8;
   }
 
+  //method that prints value
   @override
   String toString() {
     return '$value';
