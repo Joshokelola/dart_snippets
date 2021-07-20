@@ -18,4 +18,23 @@ void main() {
     ..id = 14389;
   print(user);
   print(user.toJson());
+
+  final Password = password();
+  Password.value = 'joshua123';
+  print(Password);
+
+  print(Password.isValid());
+}
+/*class password()*/
+class password {
+  String value = '';
+
+  bool isValid() {
+    return value.length > 8;
+  }
+
+  @override
+  String toString() {
+    return '$value';
+  }
 }
