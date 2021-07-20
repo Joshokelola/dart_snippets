@@ -13,9 +13,9 @@ class User {
 }
 
 void main() {
-  final user = User();
-  user.name = 'Joshua';
-  user.id = 14389;
+  final user = User()
+    ..name = 'Joshua'
+    ..id = 14389;
   print(user);
   print(user.toJson());
 }
