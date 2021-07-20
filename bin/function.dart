@@ -16,4 +16,17 @@ void main() {
   }
 
   print(FullName('Joshua', 'Okelola'));
+
+  //using default values in functions
+  //A boolean fuction
+  bool withinTolerance(int value, [int min = 0, int max = 100]) {
+    return min <= value && value <= max;
+  }
+  
+  //The if statement is evaluated when the withinTolerance() function evaluates true.
+  if (withinTolerance(101)) {
+    print('This Number is between one and hundred');
+  } else {
+    print('This Number is not within the range of 1-100');
+  }
 }
