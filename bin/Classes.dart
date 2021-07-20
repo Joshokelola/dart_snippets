@@ -25,6 +25,7 @@ void main() {
 
   print(Password.isValid());
 }
+
 /*class password()*/
 class password {
   String value = '';
